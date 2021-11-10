@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah_divisi"
+        android:textSize="@dimen/tulisan16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dimen20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEdtNama"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen8dp"
+        android:layout_marginEnd="@dimen/dimen20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tulisan12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSimpan"
+        style="android:Widget.Material.Button.Borderless"
+        android:layout_width="@dimen/dimen200dp"
+        android:layout_height="@dimen/dimen35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen32dp"
+        android:layout_marginEnd="@dimen/dimen20dp"
+        android:layout_marginBottom="@dimen/dimen32dp"
+        android:background="@drawable/bg_color45bbff_rad4px"
+        android:text="@string/simpam"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tulisan12sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.activity.DetailBeritaActivity">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar_2_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:layout_marginEnd="@dimen/dimen4dp"
+        android:fillViewport="true"
+        android:scrollbarSize="@dimen/dimen2dp"
+        android:scrollbarThumbVertical="@color/color45bbff"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginEnd="@dimen/dimen16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvJudulBerita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tulisan16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen4dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/diposting_oleh"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+
+                    <TextView
+                        android:id="@+id/tvDipostingOleh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/diposting_oleh"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/diedit_oleh"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+
+                    <TextView
+                        android:id="@+id/tvDieditOleh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/diposting_oleh"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/kategori"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+
+                    <TextView
+                        android:id="@+id/tvKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/kategori"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/tanggal_posting"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+
+                    <TextView
+                        android:id="@+id/tvTanggalPosting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/tanggal_posting"
+                        android:textColor="@color/color6B6B6B"
+                        android:textSize="@dimen/tulisan8sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen200dp"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:contentDescription="@string/image"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvIsiBerita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:layout_marginBottom="@dimen/dimen20dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tulisan12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

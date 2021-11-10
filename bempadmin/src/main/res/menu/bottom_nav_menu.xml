@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_berita"
+        android:icon="@drawable/ic_news"
+        android:title="@string/berita"/>
+    <item
+        android:id="@+id/menu_lomba"
+        android:icon="@drawable/ic_lomba"
+        android:title="@string/lomba" />
+    <item
+        android:id="@+id/menu_prestasi"
+        android:icon="@drawable/ic_prestasi"
+        android:title="@string/prestasi" />
+    <item
+        android:id="@+id/menu_profil"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/profil" />
+</menu>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.activity.ProfilActivity">
+
+    <include
+        android:id="@+id/includeProgressBar"
+        layout="@layout/progressbar_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_profil"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen32dp"
+        android:paddingBottom="@dimen/dimen32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen32dp"
+            android:src="@drawable/ic_default_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dimen32dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tulisan16sp"
+                android:textStyle="bold"
+                android:text="asfasf"/>
+            <TextView
+                android:id="@+id/tvNim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tulisan12sp"
+                android:text="asfasf"/>
+
+            <TextView
+                android:id="@+id/tvProdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:text="asfasf"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tulisan14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginTop="@dimen/dimen32dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            app:cardBackgroundColor="@color/colorc06eff"
+            app:cardCornerRadius="@dimen/dimen5dp"
+            app:cardElevation="@dimen/dimen0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen16dp"
+                    android:layout_height="@dimen/dimen16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:background="@drawable/ic_password"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/ubah_password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tulisan14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTentangAplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            app:cardBackgroundColor="@color/colorc06eff"
+            app:cardCornerRadius="@dimen/dimen5dp"
+            app:cardElevation="@dimen/dimen0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen16dp"
+                    android:layout_height="@dimen/dimen16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:background="@drawable/ic_about"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tentang_aplikasi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tulisan14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            app:cardBackgroundColor="@color/colorc06eff"
+            app:cardCornerRadius="@dimen/dimen5dp"
+            app:cardElevation="@dimen/dimen0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen16dp"
+                    android:layout_height="@dimen/dimen16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:background="@drawable/ic_logout"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/keluar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tulisan14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@drawable/nav_bottom_change"
+        app:itemTextColor="@drawable/nav_bottom_change"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

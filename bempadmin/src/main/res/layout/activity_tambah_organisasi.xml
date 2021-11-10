@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.activity.TambahOrganisasiActivity">
+
+    <include
+        android:id="@+id/includeProgressBar"
+        layout="@layout/progressbar_layout_admin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar_2_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:scrollbarSize="@dimen/dimen2dp"
+        android:scrollbarThumbVertical="@color/color0475ff"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbar">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/nama_anggota"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tulisan12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/spinDivisi"
+                    android:layout_width="@dimen/dimen0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="@string/divisi"
+                    android:padding="@dimen/dimen12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color99000000"
+                    android:textSize="@dimen/tulisan12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnTambahDivisi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_arrow_tint="@color/color99000000"
+                    app:spinner_divider_color="@color/color99000000"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTambahDivisi"
+                    style="android:Widget.Material.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_color45bbff_rad4px"
+                    android:paddingStart="@dimen/dimen10dp"
+                    android:paddingEnd="@dimen/dimen10dp"
+                    android:text="@string/tambah_divisi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tulisan12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1dp"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="130dp"
+                android:background="@color/color66000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:text="@string/foto_profil"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tulisan12sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen4dp"
+                android:background="@drawable/border_color99000000_rad4px">
+
+                <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_add_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:background="@drawable/border_color99000000_rad4px"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/mottohidup"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLength="100"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tulisan12sp" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dimen4dp"
+                    android:background="#1A000000">
+
+                    <TextView
+                        android:id="@+id/tvSisaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10dp"
+                        android:layout_marginTop="@dimen/dimen2dp"
+                        android:layout_marginEnd="@dimen/dimen10dp"
+                        android:layout_marginBottom="@dimen/dimen2dp"
+                        android:textSize="@dimen/tulisan10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/spinAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:gravity="start"
+                android:hint="@string/silahkan_pilih"
+                android:padding="@dimen/dimen12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color99000000"
+                android:textSize="@dimen/tulisan12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnTambahDivisi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="8dp"
+                app:spinner_arrow_tint="@color/color99000000"
+                app:spinner_divider_color="@color/color99000000"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_popup_animation="dropdown"
+                app:spinner_popup_background="@color/white"
+                app:spinner_popup_elevation="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1dp"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:background="@color/color66000000" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEmail"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tulisan12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSimpan"
+                style="android:Widget.Material.Button.Borderless"
+                android:layout_width="@dimen/dimen200dp"
+                android:layout_height="@dimen/dimen35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen32dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:background="@drawable/bg_color45bbff_rad4px"
+                android:text="@string/simpam"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tulisan12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

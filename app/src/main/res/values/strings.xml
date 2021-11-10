@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Bemp</string>
+    <string name="image">image</string>
+    <string name="silahkan_masuk_terlebih_dahulu">Selamat Datang Di</string>
+    <string name="email">Email</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun ?</string>
+    <string name="daftar">Daftar</string>
+    <string name="ok">Ok</string>
+    <string name="berhasilregister">Berhasil Register User</string>
+    <string name="gagalregister">Gagal Register Admin</string>
+    <string name="namadepanerr">Nama Depan tidak boleh kosong!</string>
+    <string name="emailerr">Email tidak boleh kosong!</string>
+    <string name="namabelakangerr">Nama belakang tidak boleh kosong!</string>
+    <string name="passerr">Password tidak boleh kosong!</string>
+    <string name="emailterdaftar">Email sudah terdaftar</string>
+    <string name="errorregister">Maaf, terjadi kesalahan dalam menyimpan data</string>
+    <string name="loginerror">Email atau kata sandi salah</string>
+    <string name="pendaftaran_mahasiswa">Pendaftaran Mahasiswa</string>
+    <string name="nim">Nim</string>
+    <string name="program_studi">Program Studi</string>
+    <string name="nimerr">Nim tidak boleh kosong!</string>
+    <string name="prodierr">Program studi belom dipilih!</string>
+    <string name="beranda">Beranda</string>
+    <string name="lomba">Lomba</string>
+    <string name="profil">Profil</string>
+    <string name="ubah_password">Ubah Kata Sandi</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="keluar">Keluar</string>
+    <string name="versi_aplikasi">Versi Aplikasi</string>
+    <string name="nama_aplikasi">Nama Aplikasi</string>
+    <string name="bahasa_pemrograman">Bahasa Pemrograman</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="database">Database</string>
+    <string name="firebase">Firebase</string>
+    <string name="kata_sandi_baru">Kata Sandi Baru</string>
+    <string name="konfirmasi_kata_sandi_baru">Konfirmasi Kata Sandi Baru</string>
+    <string name="simpam">Simpan</string>
+    <string name="konfirmasipasserr">Konfirmasi kata sandi baru tidak boleh kosong</string>
+    <string name="ubahpasserr">Kata sandi baru dan konfirmasi kata sandi baru tidak sama</string>
+    <string name="berhasiubahpass">Kata sandi telah diubah</string>
+    <string name="gagalubahpass">Kata sandi gagal diubah</string>
+    <string name="selamat_datang">Selamat Datang,</string>
+    <string name="date">%1$s,</string>
+    <string name="struktur_organisasi_bem">Struktur Organisasi BEM</string>
+    <string name="struktur_organisasi">Struktur Organisasi</string>
+    <string name="divisititikdua">Divisi:</string>
+    <string name="errorload">Maaf, terjadi kesalahan dalam mengambil data</string>
+    <string name="tentang_bem">Tentang BEM</string>
+    <string name="kategori">Kategori</string>
+    <string name="baca_selengkapnya">Baca Selengkapnya</string>
+    <string name="tanggal_posting">Tanggal Posting:</string>
+    <string name="diposting_oleh">Diposting Oleh:</string>
+    <string name="diedit_oleh">Diubah Oleh:</string>
+    <string name="berita">Berita</string>
+    <string name="prestasi_mahasiswa">Prestasi Mahasiswa</string>
+    <string name="ikut_lomba">Ikut Lomba</string>
+    <string name="detail_lomba">Detail Lomba</string>
+    <string name="berhasildaftar">%1$s berhasil daftar perlombaan ini</string>
+    <string name="gagaldaftarlomba">Maaf, kamu gagal ikut lomba</string>
+    <string name="sudahdaftar">Kamu sudah daftar lomba ini</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="masukkan_nama_mahasiswa">Masukkan nama mahasiswa</string>
+    <string name="bemp_information">Bemp Information</string>
+    <string-array name="prodi">
+        <item>Teknik Mesin</item>
+        <item>Teknik Sipil</item>
+        <item>Teknik Konversi Energi</item>
+        <item>Teknik Listrik</item>
+        <item>Teknik Elektronika</item>
+        <item>Teknik Telekomunikasi</item>
+        <item>Teknik Komputer</item>
+        <item>Manajemen Informatika</item>
+    </string-array>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.activity.StrukturOrganisasiActivity">
+
+    <include
+        android:id="@+id/includeProgressBar"
+        layout="@layout/progressbar_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar_2_item_user"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:layout_marginEnd="@dimen/dimen5dp"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:scrollbarSize="@dimen/dimen2dp"
+        android:scrollbarThumbVertical="@color/color3b65ff"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0dp"
+            android:layout_marginStart="@dimen/dimen10dp"
+            android:layout_marginEnd="@dimen/dimen5dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:text="@string/tentang_bem"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/tulisan16sp" />
+
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:text="@string/tentang_bem"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:textSize="@dimen/tulisan12sp"
+                android:fontFamily="sans-serif-light"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStrukturOrganisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
